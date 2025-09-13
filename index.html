@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel='stylesheet' href='style.css' />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Expense Tracker</h1>
+            <div class="total-expenses">R0.00</div>
+        </header>
+
+        <div class="summary">
+            <div class="summary-item">
+                <div class="summary-value" id="total-expenses-count">0</div>
+                <div class="summary-label">Total Expenses</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-value" id="largest-expense">R0.00</div>
+                <div class="summary-label">Largest Expense</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-value" id="average-expense">R0.00</div>
+                <div class="summary-label">Average Expense</div>
+            </div>
+        </div>
+
+        <div class="expense-form">
+            <div class="form-group">
+                <label for="expense-name">Expense Name</label>
+                <input type="text" id="expense-name" placeholder="E.g., Groceries, Rent, etc.">
+            </div>
+            <div class="form-group">
+                <label for="expense-amount">Amount (R)</label>
+                <input type="number" id="expense-amount" placeholder="0.00" step="0.01" min="0">
+            </div>
+            <div class="form-group">
+                <label for="expense-category">Category</label>
+                <select id="expense-category">
+                    <option value="Food">Food</option>
+                    <option value="Transportation">Transportation</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Utilities">Utilities</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="expense-date">Date</label>
+                <input type="date" id="expense-date">
+            </div>
+            <button id="add-expense">Add Expense</button>
+        </div>
+
+        <div class="expense-list" id="expenses-container">
+            <!-- Expenses will be added here dynamically -->
+            <div class="no-expenses">No expenses added yet. Start by adding an expense above!</div>
+        </div>
+    </div>
+
+    <script src='script.js'>
+
+    </script>
+</body>
+
+</html>
