@@ -1,4 +1,4 @@
-# Expense Tracke Web
+# Expense Tracker 
 
 A simple web application for tracking your expenses.
 
